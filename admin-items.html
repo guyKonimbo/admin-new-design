@@ -1557,7 +1557,7 @@ body.campaigns.marketing.edit #content form.edit_campaign .buttons .save_before_
               <h5>כל המוצרים</h5>
               		<div class="search" style="">
 <form action="/admin/items" method="get" style="">    <div class="input" style="">
-      <input id="q" name="q" type="text" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+      <input id="q" name="q" type="text" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" style="">
       <input id="category" name="category" type="hidden">
       <input id="tag_id" name="tag_id" type="hidden">
       <input id="brand_id" name="brand_id" type="hidden">
@@ -1569,8 +1569,8 @@ body.campaigns.marketing.edit #content form.edit_campaign .buttons .save_before_
       <input id="expand" name="expand" type="hidden">
     </div>
 
-    <div class="button">
-      <input type="submit" value="חיפוש בכל המוצרים">
+    <div class="button" style="">
+      <input type="submit" value="חיפוש בכל המוצרים" style="">
     </div>
 </form></div>
 
@@ -1836,7 +1836,7 @@ $(document).ready(function(){
 <option value="180">180</option>
 <option value="360">360</option></select> ימים</span>	
 
-			<span><a href="https://secure.konimbo.co.il/admin/items?filter=all&amp;multiple=true">בחירה מרובה</a></span>	
+			<span class="multiple_button"><a href="https://secure.konimbo.co.il/admin/items?filter=all&amp;multiple=true">בחירה מרובה</a></span>	
 
   <input id="order" name="order" type="hidden" value="up_position">
   <input id="view" name="view" type="hidden">
@@ -1863,24 +1863,24 @@ $(document).ready(function(){
 	<table id="admin_items">
 	  <thead>
 	    <tr>
-	      <th class="last"></th>
-	      <th class="left">      <a href="/admin/items?filter=all&amp;order=down_title">שם</a>
+	      <th class="last head-cell-img"></th>
+	      <th class="left head-cell-title">      <a href="/admin/items?filter=all&amp;order=down_title">שם</a>
 </th>
-	      <th>      <a href="/admin/items?filter=all&amp;order=down_price">מחיר</a>
+	      <th class="head-cell-price">      <a href="/admin/items?filter=all&amp;order=down_price">מחיר</a>
 </th>
-	        <th>      <a href="/admin/items?filter=all&amp;order=down_cost">עלות</a>
+	        <th class="head-cell-cost">      <a href="/admin/items?filter=all&amp;order=down_cost">עלות</a>
 </th>
-	        <th>מחיר מינימלי</th>
-	      <th>      <a href="/admin/items?filter=all&amp;order=down_delivery_time">זמן אספקה</a>
+	        <th class="head-cell-min-cost">מחיר מינימלי</th>
+	      <th class="head-cell-time">      <a href="/admin/items?filter=all&amp;order=down_delivery_time">זמן אספקה</a>
 </th>
-	      <th>מחיר לפני מבצע</th>
-	      <th>    <a href="/admin/items?filter=all&amp;order=down_position">מיקום ▲</a>
+	      <th class="head-cell-before">מחיר לפני מבצע</th>
+	      <th class="head-cell-position">    <a href="/admin/items?filter=all&amp;order=down_position">מיקום ▲</a>
 </th>
-	      <th>      <a href="/admin/items?filter=all&amp;order=down_visable">הצג בחנות</a>
+	      <th class="head-cell-show">      <a href="/admin/items?filter=all&amp;order=down_visable">הצג בחנות</a>
 </th>
-	      <th>      <a href="/admin/items?filter=all&amp;order=down_visable_engine">הצג במנועי השוואת מחירים</a>
+	      <th class="head-cell-compar">      <a href="/admin/items?filter=all&amp;order=down_visable_engine">הצג במנועי השוואת מחירים</a>
 </th>
-	      <th>מק"ט</th>
+	      <th class="head-cell-code">מק"ט</th>
 	      <th>      <a href="/admin/items?filter=all&amp;order=down_updated">עודכן ב</a>
 </th>
 	      <th class="last"></th>
@@ -1889,28 +1889,28 @@ $(document).ready(function(){
 	  <tbody>
 	    
 	<tr id="item_4778541" data-store-category-id="247380">
-		<td class="category last">
+		<td class="category last item-cell-img">
 		  <img alt="טסט אחד " src="https://konimboimages.s3.amazonaws.com/system/photos/9139906/cart/6bebba1a63ffc58eb03a983fe82e11f5.png">  
 			
 		  
 		</td>
 
-		  <td class="category">
+		  <td class="category item-cell-title">
 				  <a href="/admin/items/4778541-%D7%98%D7%A1%D7%98-%D7%90%D7%97%D7%93-/edit">טסט אחד </a>
 		  </td>
 		  
-		  <td class="category"><input id="4778541 price" size="6" type="text" value="0.00" data-name="items[4778541-טסט-אחד-][price]">
+		  <td class="category item-cell-price"><input id="4778541 price" size="6" type="text" value="0.00" data-name="items[4778541-טסט-אחד-][price]">
 
 
 
 
 </td>
-  <td class="category">
+  <td class="category item-cell-cost">
     <input id="4778541 cost" size="6" type="text" data-name="items[4778541-טסט-אחד-][cost]">
     
   </td>
-  <td class="category"><input disabled="disabled" id="4778541 price_limit" size="6" type="text" data-name="items[4778541-טסט-אחד-][price_limit]"></td>
-<td class="category"><select id="items_4778541-טסט-אחד-_delivery_time" data-name="items[4778541-טסט-אחד-][delivery_time]"><option value="1">1</option>
+  <td class="category item-cell-min-cost"><input disabled="disabled" id="4778541 price_limit" size="6" type="text" data-name="items[4778541-טסט-אחד-][price_limit]"></td>
+<td class="category item-cell-time"><select id="items_4778541-טסט-אחד-_delivery_time" data-name="items[4778541-טסט-אחד-][delivery_time]"><option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
 <option value="4">4</option>
@@ -2000,12 +2000,12 @@ $(document).ready(function(){
 <option value="88">88</option>
 <option value="89">89</option>
 <option value="90">90</option></select></td>
-<td class="category"><input id="4778541 origin_price" size="6" type="text" data-name="items[4778541-טסט-אחד-][origin_price]"></td>
-<td class="category"><input id="4778541 position" size="3" type="text" value="1" data-name="items[4778541-טסט-אחד-][position]">
+<td class="category item-cell-before"><input id="4778541 origin_price" size="6" type="text" data-name="items[4778541-טסט-אחד-][origin_price]"></td>
+<td class="category item-cell-position"><input id="4778541 position" size="3" type="text" value="1" data-name="items[4778541-טסט-אחד-][position]">
 </td>
-<td class="category"><input type="hidden" value="0" data-name="items[4778541-טסט-אחד-][store_visable]"><input id="4778541 store_visable" type="checkbox" value="1" data-name="items[4778541-טסט-אחד-][store_visable]"></td>
-<td class="category"><input type="hidden" value="0" data-name="items[4778541-טסט-אחד-][zap_visable]"><input id="4778541 zap_visable" type="checkbox" value="1" data-name="items[4778541-טסט-אחד-][zap_visable]"></td>
-<td class="category"><input class="en" id="4778541 code" size="3" type="text" value="" data-name="items[4778541-טסט-אחד-][code]">
+<td class="category item-cell-show"><input type="hidden" value="0" data-name="items[4778541-טסט-אחד-][store_visable]"><input id="4778541 store_visable" type="checkbox" value="1" data-name="items[4778541-טסט-אחד-][store_visable]"></td>
+<td class="category item-cell-show-compar"><input type="hidden" value="0" data-name="items[4778541-טסט-אחד-][zap_visable]"><input id="4778541 zap_visable" type="checkbox" value="1" data-name="items[4778541-טסט-אחד-][zap_visable]"></td>
+<td class="category item-cell-show-code"><input class="en" id="4778541 code" size="3" type="text" value="" data-name="items[4778541-טסט-אחד-][code]">
 </td>
 
 		<td class="category">11/09/22 12:28</td>
@@ -4468,7 +4468,7 @@ $(document).ready(function(){
 	<input id="specific_dad" name="specific_dad" type="hidden">
 	<input id="multiple" name="multiple" type="hidden">
 	<p><input name="commit" type="submit" value="שמור הכל"></p>
-	   <input id="item_submit_fixed" name="commit" type="submit" value="שמור הכל">
+	   <input id="item_submit_fixed" name="commit" type="submit" value="שמור הכל" style="display: none;">
 </form>
 	 
 
@@ -4576,7 +4576,7 @@ $(document).ready(function(){
                             <span class="required">*</span>
                             <span class="title">תאור הפנייה</span>
                         </label>
-                        <textarea type="text" id="userDescription" class="" name="userDescription" placeholder="תאור הפנייה" data-placeholder="תאור הפנייה" style="display: none;"></textarea><div class="ck ck-reset ck-editor ck-rounded-corners" role="application" dir="rtl" lang="he" aria-labelledby="ck-editor__label_ef8bbf14a5b694dd3ad8057cf8e011edb"><label class="ck ck-label ck-voice-label" id="ck-editor__label_ef8bbf14a5b694dd3ad8057cf8e011edb">Rich Text Editor</label><div class="ck ck-editor__top ck-reset_all" role="presentation"><div class="ck ck-sticky-panel"><div class="ck ck-sticky-panel__placeholder" style="display: none;"></div><div class="ck ck-sticky-panel__content"><div class="ck ck-toolbar ck-toolbar_grouping" role="toolbar" aria-label="Editor toolbar"><div class="ck ck-toolbar__items"><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_ec9a9c0d784c6583be9e23498b8f53e7f" aria-pressed="false"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M10.187 17H5.773c-.637 0-1.092-.138-1.364-.415-.273-.277-.409-.718-.409-1.323V4.738c0-.617.14-1.062.419-1.332.279-.27.73-.406 1.354-.406h4.68c.69 0 1.288.041 1.793.124.506.083.96.242 1.36.478.341.197.644.447.906.75a3.262 3.262 0 0 1 .808 2.162c0 1.401-.722 2.426-2.167 3.075C15.05 10.175 16 11.315 16 13.01a3.756 3.756 0 0 1-2.296 3.504 6.1 6.1 0 0 1-1.517.377c-.571.073-1.238.11-2 .11zm-.217-6.217H7v4.087h3.069c1.977 0 2.965-.69 2.965-2.072 0-.707-.256-1.22-.768-1.537-.512-.319-1.277-.478-2.296-.478zM7 5.13v3.619h2.606c.729 0 1.292-.067 1.69-.2a1.6 1.6 0 0 0 .91-.765c.165-.267.247-.566.247-.897 0-.707-.26-1.176-.778-1.409-.519-.232-1.31-.348-2.375-.348H7z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Bold (Ctrl+B)</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_ec9a9c0d784c6583be9e23498b8f53e7f">Bold</span></button><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e659e47ba7fd689ccca66bc13f636f1b1" aria-pressed="false"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="m9.586 14.633.021.004c-.036.335.095.655.393.962.082.083.173.15.274.201h1.474a.6.6 0 1 1 0 1.2H5.304a.6.6 0 0 1 0-1.2h1.15c.474-.07.809-.182 1.005-.334.157-.122.291-.32.404-.597l2.416-9.55a1.053 1.053 0 0 0-.281-.823 1.12 1.12 0 0 0-.442-.296H8.15a.6.6 0 0 1 0-1.2h6.443a.6.6 0 1 1 0 1.2h-1.195c-.376.056-.65.155-.823.296-.215.175-.423.439-.623.79l-2.366 9.347z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Italic (Ctrl+I)</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e659e47ba7fd689ccca66bc13f636f1b1">Italic</span></button><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_ed7778dff7b7e0d991a99caebd229e49b" aria-pressed="false"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="m11.077 15 .991-1.416a.75.75 0 1 1 1.229.86l-1.148 1.64a.748.748 0 0 1-.217.206 5.251 5.251 0 0 1-8.503-5.955.741.741 0 0 1 .12-.274l1.147-1.639a.75.75 0 1 1 1.228.86L4.933 10.7l.006.003a3.75 3.75 0 0 0 6.132 4.294l.006.004zm5.494-5.335a.748.748 0 0 1-.12.274l-1.147 1.639a.75.75 0 1 1-1.228-.86l.86-1.23a3.75 3.75 0 0 0-6.144-4.301l-.86 1.229a.75.75 0 0 1-1.229-.86l1.148-1.64a.748.748 0 0 1 .217-.206 5.251 5.251 0 0 1 8.503 5.955zm-4.563-2.532a.75.75 0 0 1 .184 1.045l-3.155 4.505a.75.75 0 1 1-1.229-.86l3.155-4.506a.75.75 0 0 1 1.045-.184z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Link (Ctrl+K)</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_ed7778dff7b7e0d991a99caebd229e49b">Link</span></button></div></div></div></div></div><div class="ck ck-editor__main" role="presentation"><div class="ck-blurred ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline" lang="he" dir="rtl" role="textbox" aria-label="Rich Text Editor, main" contenteditable="true"><p class="ck-placeholder" data-placeholder="תאור הפנייה"><br data-cke-filler="true"></p></div></div></div>
+                        <textarea type="text" id="userDescription" class="" name="userDescription" placeholder="תאור הפנייה" data-placeholder="תאור הפנייה" style="display: none;"></textarea><div class="ck ck-reset ck-editor ck-rounded-corners" role="application" dir="rtl" lang="he" aria-labelledby="ck-editor__label_eb1e21dc90b2194d76251dbafce44231f"><label class="ck ck-label ck-voice-label" id="ck-editor__label_eb1e21dc90b2194d76251dbafce44231f">Rich Text Editor</label><div class="ck ck-editor__top ck-reset_all" role="presentation"><div class="ck ck-sticky-panel"><div class="ck ck-sticky-panel__placeholder" style="display: none;"></div><div class="ck ck-sticky-panel__content"><div class="ck ck-toolbar ck-toolbar_grouping" role="toolbar" aria-label="Editor toolbar"><div class="ck ck-toolbar__items"><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_eca593cc59e18cc3f13152973b4168c16" aria-pressed="false"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M10.187 17H5.773c-.637 0-1.092-.138-1.364-.415-.273-.277-.409-.718-.409-1.323V4.738c0-.617.14-1.062.419-1.332.279-.27.73-.406 1.354-.406h4.68c.69 0 1.288.041 1.793.124.506.083.96.242 1.36.478.341.197.644.447.906.75a3.262 3.262 0 0 1 .808 2.162c0 1.401-.722 2.426-2.167 3.075C15.05 10.175 16 11.315 16 13.01a3.756 3.756 0 0 1-2.296 3.504 6.1 6.1 0 0 1-1.517.377c-.571.073-1.238.11-2 .11zm-.217-6.217H7v4.087h3.069c1.977 0 2.965-.69 2.965-2.072 0-.707-.256-1.22-.768-1.537-.512-.319-1.277-.478-2.296-.478zM7 5.13v3.619h2.606c.729 0 1.292-.067 1.69-.2a1.6 1.6 0 0 0 .91-.765c.165-.267.247-.566.247-.897 0-.707-.26-1.176-.778-1.409-.519-.232-1.31-.348-2.375-.348H7z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Bold (Ctrl+B)</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_eca593cc59e18cc3f13152973b4168c16">Bold</span></button><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_eb11dc7bf7e45dd7f397cc5dc5e8f160c" aria-pressed="false"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="m9.586 14.633.021.004c-.036.335.095.655.393.962.082.083.173.15.274.201h1.474a.6.6 0 1 1 0 1.2H5.304a.6.6 0 0 1 0-1.2h1.15c.474-.07.809-.182 1.005-.334.157-.122.291-.32.404-.597l2.416-9.55a1.053 1.053 0 0 0-.281-.823 1.12 1.12 0 0 0-.442-.296H8.15a.6.6 0 0 1 0-1.2h6.443a.6.6 0 1 1 0 1.2h-1.195c-.376.056-.65.155-.823.296-.215.175-.423.439-.623.79l-2.366 9.347z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Italic (Ctrl+I)</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_eb11dc7bf7e45dd7f397cc5dc5e8f160c">Italic</span></button><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e662a94211c9d7fbbb623c241a264eaab" aria-pressed="false"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="m11.077 15 .991-1.416a.75.75 0 1 1 1.229.86l-1.148 1.64a.748.748 0 0 1-.217.206 5.251 5.251 0 0 1-8.503-5.955.741.741 0 0 1 .12-.274l1.147-1.639a.75.75 0 1 1 1.228.86L4.933 10.7l.006.003a3.75 3.75 0 0 0 6.132 4.294l.006.004zm5.494-5.335a.748.748 0 0 1-.12.274l-1.147 1.639a.75.75 0 1 1-1.228-.86l.86-1.23a3.75 3.75 0 0 0-6.144-4.301l-.86 1.229a.75.75 0 0 1-1.229-.86l1.148-1.64a.748.748 0 0 1 .217-.206 5.251 5.251 0 0 1 8.503 5.955zm-4.563-2.532a.75.75 0 0 1 .184 1.045l-3.155 4.505a.75.75 0 1 1-1.229-.86l3.155-4.506a.75.75 0 0 1 1.045-.184z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Link (Ctrl+K)</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e662a94211c9d7fbbb623c241a264eaab">Link</span></button></div></div></div></div></div><div class="ck ck-editor__main" role="presentation"><div class="ck-blurred ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline" lang="he" dir="rtl" role="textbox" aria-label="Rich Text Editor, main" contenteditable="true"><p class="ck-placeholder" data-placeholder="תאור הפנייה"><br data-cke-filler="true"></p></div></div></div>
                     </div>
 
                     <div class="buttonBox">
@@ -7561,4 +7561,4 @@ $('ul#quick').prepend('<li class="market_automation"><a href="https://secure.kon
 <!-- admin_code_foot_end 111966_Marketing Automation - רוחבי -->
 	
 
-<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul><div id="goog-gt-" class="skiptranslate VIpgJd-yAWNEb-L7lbkb" dir="rtl"><div style="padding: 8px;"><div><div class="VIpgJd-yAWNEb-l4eHX"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google Translate"></div></div></div><div style="padding: 8px; float: left; width: 100%;"><h1 class="VIpgJd-yAWNEb-r4nke VIpgJd-yAWNEb-mrxPge">טקסט מקור</h1></div><div style="padding: 8px;"><div class="VIpgJd-yAWNEb-nVMfcd-fmcmS"></div></div><div class="VIpgJd-yAWNEb-cGMI2b" style="padding: 8px;"><div class="VIpgJd-yAWNEb-Z0Arqf-PLDbbf"><span class="VIpgJd-yAWNEb-Z0Arqf-hSRGPd">הוסף תרגום טוב יותר</span></div><div class="VIpgJd-yAWNEb-fw42Ze-Z0Arqf-haAclf"><hr style="color: #ccc; background-color: #ccc; height: 1px; border: none;"><div class="VIpgJd-yAWNEb-Z0Arqf-H9tDt"></div></div></div><div class="VIpgJd-yAWNEb-jOfkMb-Ne3sFf" style="display: none;"></div></div><div class="ck-body-wrapper"><div class="ck ck-reset_all ck-body ck-rounded-corners" dir="rtl"><div class="ck ck-balloon-panel ck-balloon-panel_arrow_nw ck-balloon-panel_with-arrow" style="top: 0px; left: 0px;"><div class="ck ck-balloon-rotator" z-index="-1"><div class="ck-balloon-rotator__navigation ck-hidden"><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e052a3ca02299c68a0e52c62d7a5075ab"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M11.463 5.187a.888.888 0 1 1 1.254 1.255L9.16 10l3.557 3.557a.888.888 0 1 1-1.254 1.255L7.26 10.61a.888.888 0 0 1 .16-1.382l4.043-4.042z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Previous</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e052a3ca02299c68a0e52c62d7a5075ab">Previous</span></button><span class="ck-balloon-rotator__counter"></span><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e7a3c404de4f5867fc9cb52d6e227d858"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M8.537 14.813a.888.888 0 1 1-1.254-1.255L10.84 10 7.283 6.442a.888.888 0 1 1 1.254-1.255L12.74 9.39a.888.888 0 0 1-.16 1.382l-4.043 4.042z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Next</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e7a3c404de4f5867fc9cb52d6e227d858">Next</span></button></div><div class="ck-balloon-rotator__content"></div></div></div><div class="ck-fake-panel ck-hidden" style="top: 0px; left: 0px; width: 0px; height: 0px;"></div></div></div><div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf"><div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe" width="96px" height="96px" viewBox="0 0 66 66"><circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><div userpilotid="105" id="userpilotContentNative" style="display: block; line-height: 18px; transition: none 0s ease 0s; top: 0px; left: 0px; width: 0px; height: 0px; pointer-events: none; z-index: 999999996; overflow: unset; position: absolute; visibility: visible !important; zoom: 1;"><div id="userpilotContentContainer" style="transform: scale(1); transform-origin: 623px 468.5px;"><iframe id="userpilotContentNativeIframe" style="border: none; width: 17px; height: 17px; position: absolute; pointer-events: all; background: none; color-scheme: light; opacity: 1 !important; z-index: 999999; transform: translateY(161.222px); left: 136.735px; visibility: hidden; margin-left: 0px; margin-top: 0px;"></iframe></div></div></body>
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul><div id="goog-gt-" class="skiptranslate VIpgJd-yAWNEb-L7lbkb" dir="rtl"><div style="padding: 8px;"><div><div class="VIpgJd-yAWNEb-l4eHX"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google Translate"></div></div></div><div style="padding: 8px; float: left; width: 100%;"><h1 class="VIpgJd-yAWNEb-r4nke VIpgJd-yAWNEb-mrxPge">טקסט מקור</h1></div><div style="padding: 8px;"><div class="VIpgJd-yAWNEb-nVMfcd-fmcmS"></div></div><div class="VIpgJd-yAWNEb-cGMI2b" style="padding: 8px;"><div class="VIpgJd-yAWNEb-Z0Arqf-PLDbbf"><span class="VIpgJd-yAWNEb-Z0Arqf-hSRGPd">הוסף תרגום טוב יותר</span></div><div class="VIpgJd-yAWNEb-fw42Ze-Z0Arqf-haAclf"><hr style="color: #ccc; background-color: #ccc; height: 1px; border: none;"><div class="VIpgJd-yAWNEb-Z0Arqf-H9tDt"></div></div></div><div class="VIpgJd-yAWNEb-jOfkMb-Ne3sFf" style="display: none;"></div></div><div class="ck-body-wrapper"><div class="ck ck-reset_all ck-body ck-rounded-corners" dir="rtl"><div class="ck ck-balloon-panel ck-balloon-panel_arrow_nw ck-balloon-panel_with-arrow" style="top: 0px; left: 0px;"><div class="ck ck-balloon-rotator" z-index="-1"><div class="ck-balloon-rotator__navigation ck-hidden"><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_efbb135036385cc3da681bdedabebb305"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M11.463 5.187a.888.888 0 1 1 1.254 1.255L9.16 10l3.557 3.557a.888.888 0 1 1-1.254 1.255L7.26 10.61a.888.888 0 0 1 .16-1.382l4.043-4.042z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Previous</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_efbb135036385cc3da681bdedabebb305">Previous</span></button><span class="ck-balloon-rotator__counter"></span><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_ee1c3e5a22f7bf30b52603c80ec72defd"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M8.537 14.813a.888.888 0 1 1-1.254-1.255L10.84 10 7.283 6.442a.888.888 0 1 1 1.254-1.255L12.74 9.39a.888.888 0 0 1-.16 1.382l-4.043 4.042z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Next</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_ee1c3e5a22f7bf30b52603c80ec72defd">Next</span></button></div><div class="ck-balloon-rotator__content"></div></div></div><div class="ck-fake-panel ck-hidden" style="top: 0px; left: 0px; width: 0px; height: 0px;"></div></div></div><div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf"><div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe" width="96px" height="96px" viewBox="0 0 66 66"><circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><div userpilotid="105" id="userpilotContentNative" style="display: block; line-height: 18px; transition: none 0s ease 0s; top: 0px; left: 0px; width: 0px; height: 0px; pointer-events: none; z-index: 999999996; overflow: unset; position: absolute; visibility: visible !important; zoom: 1;"><div id="userpilotContentContainer" style="transform: scale(1); transform-origin: 623px 468.5px;"><iframe id="userpilotContentNativeIframe" style="border: none; width: 17px; height: 17px; position: absolute; pointer-events: all; background: none; color-scheme: light; opacity: 1 !important; z-index: 999999; transform: translateY(161.222px); left: 136.735px; margin-left: 0px; margin-top: 0px; visibility: hidden;"></iframe></div></div></body>
